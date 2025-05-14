@@ -1,12 +1,12 @@
 import React from "react"
 
-const QuestionPanel = () => {
+const QuestionMO = () => {
 return(
 <div>
-    <h1>panel</h1>
+    <h1>QuestionMO</h1>
     <input placeholder = "ingrece su usuario"></input>
     {/* <button onClick={link='./home'}>Ingresar</button> */}
 </div>
 )
 }
-export default QuestionPanel;
+export default QuestionMO;

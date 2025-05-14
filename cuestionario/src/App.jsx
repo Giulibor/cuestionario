@@ -2,6 +2,10 @@ import React from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import Login from './pages/login';
 import Home from './pages/home';
+import Question from './pages/questionText';
+import QuestionPanel from './pages/questionsPanel';
+import QuestionMO from './pages/questionMo';
+import QuestionText from './pages/questionText';
 
 
 function App() {
@@ -10,6 +14,10 @@ function App() {
     <div>
       <Routes>
         <Route path="/*" element={<Login/>} />
+        <Route path="/Home" element={<Home/>} />
+        <Route path="/QuestionMO" element={<QuestionMO/>} />
+        <Route path="/QuestionPanel" element={<QuestionPanel/>} />
+        <Route path="/QuestionText" element={<QuestionText/>} />
       </Routes>
     </div>
   );
