@@ -8,16 +8,18 @@ import QuestionMO from './pages/questionMo';
 import QuestionText from './pages/questionText';
 
 
+
 function App() {
 
   return (
     <div>
       <Routes>
-        <Route path="/*" element={<Login/>} />
+        <Route path="/" element={<Login/>} />
+        <Route path="*" element={<Login/>} />
         <Route path="/Home" element={<Home/>} />
-        <Route path="/QuestionMO" element={<QuestionMO/>} />
-        <Route path="/QuestionPanel" element={<QuestionPanel/>} />
-        <Route path="/QuestionText" element={<QuestionText/>} />
+        <Route path="/QuestionMO/:categoryId/:id" element={<QuestionMO/>} />
+        <Route path="/QuestionPanel/:id" element={<QuestionPanel/>} />
+        <Route path="/QuestionText/:categoryId/:id" element={<QuestionText/>} />
       </Routes>
     </div>
   );

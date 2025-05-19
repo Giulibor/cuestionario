@@ -1,5 +1,548 @@
 {
   "users": [
-    { "id": 1, "username": "juan", "password": "1234" }
+    {
+      "id": "1",
+      "username": "juan",
+      "password": "1234"
+    },
+    {
+      "id": "2",
+      "username": "",
+      "password": "1234"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Football"
+    },
+    {
+      "id": "2",
+      "name": "Basketball"
+    },
+    {
+      "id": "3",
+      "name": "History"
+    },
+    {
+      "id": "4",
+      "name": "Science"
+    },
+    {
+      "id": "5",
+      "name": "Movies"
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "categoryId": 1,
+      "text": "¿Quién ganó el mundial 2018?",
+      "type": "multiple"
+    },
+    {
+      "id": "2",
+      "categoryId": 1,
+      "text": "¿Cuántos jugadores hay en en cancha para un equipo de fútbol?",
+      "type": "text"
+    },
+    {
+      "id": "3",
+      "categoryId": 1,
+      "text": "¿En qué país se jugó el mundial 2014?",
+      "type": "text"
+    },
+    {
+      "id": "4",
+      "categoryId": 1,
+      "text": "¿Qué jugador es conocido como 'La Pulga'?",
+      "type": "multiple"
+    },
+    {
+      "id": "5",
+      "categoryId": 1,
+      "text": "¿El fútbol se juega con las manos?",
+      "type": "text"
+    },
+    {
+      "id": "6",
+      "categoryId": 2,
+      "text": "¿Cuántos puntos vale un triple?",
+      "type": "multiple"
+    },
+    {
+      "id": "7",
+      "categoryId": 2,
+      "text": "¿Cuántos jugadores hay en cancha por equipo?",
+      "type": "text"
+    },
+    {
+      "id": "8",
+      "categoryId": 2,
+      "text": "¿Quién es Michael Jordan?",
+      "type": "multiple"
+    },
+    {
+      "id": "9",
+      "categoryId": 2,
+      "text": "¿El baloncesto se juega con los pies?",
+      "type": "boolean"
+    },
+    {
+      "id": "10",
+      "categoryId": 2,
+      "text": "¿En qué país se inventó el baloncesto?",
+      "type": "multiple"
+    },
+    {
+      "id": "11",
+      "categoryId": 3,
+      "text": "¿En qué año comenzó la Segunda Guerra Mundial?",
+      "type": "text"
+    },
+    {
+      "id": "12",
+      "categoryId": 3,
+      "text": "¿Quién fue el primer presidente de EE.UU.?",
+      "type": "multiple"
+    },
+    {
+      "id": "13",
+      "categoryId": 3,
+      "text": "¿La Revolución Francesa fue en el siglo XVIII?",
+      "type": "text"
+    },
+    {
+      "id": "14",
+      "categoryId": 3,
+      "text": "¿Dónde se fue el exilio del pueblo oriental?",
+      "type": "text"
+    },
+    {
+      "id": "15",
+      "categoryId": 3,
+      "text": "¿Quién descubrió América?",
+      "type": "text"
+    },
+    {
+      "id": "16",
+      "categoryId": 4,
+      "text": "¿Cuál es el planeta más grande del sistema solar?",
+      "type": "multiple"
+    },
+    {
+      "id": "17",
+      "categoryId": 4,
+      "text": "¿El agua hierve a 100°C?",
+      "type": "multiple"
+    },
+    {
+      "id": "18",
+      "categoryId": 4,
+      "text": "¿Quién propuso la teoría de la relatividad?",
+      "type": "text"
+    },
+    {
+      "id": "19",
+      "categoryId": 4,
+      "text": "¿Cuál es el símbolo químico del oro?",
+      "type": "multiple"
+    },
+    {
+      "id": "20",
+      "categoryId": 4,
+      "text": "¿La fotosíntesis ocurre en las hojas?",
+      "type": "text"
+    },
+    {
+      "id": "21",
+      "categoryId": 5,
+      "text": "¿Quién dirigió Titanic?",
+      "type": "multiple"
+    },
+    {
+      "id": "22",
+      "categoryId": 5,
+      "text": "¿Quien es el personaje principal de Harry Potter?",
+      "type": "text"
+    },
+    {
+      "id": "23",
+      "categoryId": 5,
+      "text": "¿En qué año se estrenó 'El Señor de los Anillos: La Comunidad del Anillo'?",
+      "type": "multiple"
+    },
+    {
+      "id": "24",
+      "categoryId": 5,
+      "text": "¿Quién interpreta a Iron Man?",
+      "type": "text"
+    },
+    {
+      "id": "25",
+      "categoryId": 5,
+      "text": "¿'Avatar' es una película de animación?",
+      "type": "text"
+    }
+  ],
+  "options": [
+    {
+      "id": "1",
+      "questionId": 1,
+      "text": "Francia"
+    },
+    {
+      "id": "2",
+      "questionId": 1,
+      "text": "Brasil"
+    },
+    {
+      "id": "3",
+      "questionId": 1,
+      "text": "Alemania"
+    },
+    {
+      "id": "4",
+      "questionId": 1,
+      "text": "Argentina"
+    },
+    {
+      "id": "5",
+      "questionId": 4,
+      "text": "Lionel Messi"
+    },
+    {
+      "id": "6",
+      "questionId": 4,
+      "text": "Cristiano Ronaldo"
+    },
+    {
+      "id": "7",
+      "questionId": 4,
+      "text": "Neymar"
+    },
+    {
+      "id": "8",
+      "questionId": 4,
+      "text": "Luis Suárez"
+    },
+    {
+      "id": "9",
+      "questionId": 6,
+      "text": "3"
+    },
+    {
+      "id": "10",
+      "questionId": 6,
+      "text": "2"
+    },
+    {
+      "id": "11",
+      "questionId": 6,
+      "text": "1"
+    },
+    {
+      "id": "12",
+      "questionId": 6,
+      "text": "4"
+    },
+    {
+      "id": "13",
+      "questionId": 8,
+      "text": "Jugador de fútbol"
+    },
+    {
+      "id": "14",
+      "questionId": 8,
+      "text": "Jugador de baloncesto"
+    },
+    {
+      "id": "15",
+      "questionId": 8,
+      "text": "Entrenador"
+    },
+    {
+      "id": "16",
+      "questionId": 8,
+      "text": "Árbitro"
+    },
+    {
+      "id": "17",
+      "questionId": 10,
+      "text": "Estados Unidos"
+    },
+    {
+      "id": "18",
+      "questionId": 10,
+      "text": "España"
+    },
+    {
+      "id": "19",
+      "questionId": 10,
+      "text": "Francia"
+    },
+    {
+      "id": "20",
+      "questionId": 10,
+      "text": "Italia"
+    },
+    {
+      "id": "21",
+      "questionId": 12,
+      "text": "George Washington"
+    },
+    {
+      "id": "22",
+      "questionId": 12,
+      "text": "Abraham Lincoln"
+    },
+    {
+      "id": "23",
+      "questionId": 12,
+      "text": "Thomas Jefferson"
+    },
+    {
+      "id": "24",
+      "questionId": 12,
+      "text": "John Adams"
+    },
+    {
+      "id": "25",
+      "questionId": 14,
+      "text": "Filadelfia"
+    },
+    {
+      "id": "26",
+      "questionId": 14,
+      "text": "Nueva York"
+    },
+    {
+      "id": "27",
+      "questionId": 14,
+      "text": "Boston"
+    },
+    {
+      "id": "28",
+      "questionId": 14,
+      "text": "Washington"
+    },
+    {
+      "id": "29",
+      "questionId": 15,
+      "text": "Cristóbal Colón"
+    },
+    {
+      "id": "30",
+      "questionId": 15,
+      "text": "Américo Vespucio"
+    },
+    {
+      "id": "31",
+      "questionId": 15,
+      "text": "Hernán Cortés"
+    },
+    {
+      "id": "32",
+      "questionId": 15,
+      "text": "Francisco Pizarro"
+    },
+    {
+      "id": "33",
+      "questionId": 16,
+      "text": "Júpiter"
+    },
+    {
+      "id": "34",
+      "questionId": 16,
+      "text": "Saturno"
+    },
+    {
+      "id": "35",
+      "questionId": 16,
+      "text": "Marte"
+    },
+    {
+      "id": "36",
+      "questionId": 16,
+      "text": "Tierra"
+    },
+    {
+      "id": "37",
+      "questionId": 17,
+      "text": "Sí"
+    },
+    {
+      "id": "38",
+      "questionId": 17,
+      "text": "No"
+    },
+    {
+      "id": "39",
+      "questionId": 17,
+      "text": "A veces"
+    },
+    {
+      "id": "40",
+      "questionId": 17,
+      "text": "Nunca"
+    },
+    {
+      "id": "41",
+      "questionId": 19,
+      "text": "Au"
+    },
+    {
+      "id": "42",
+      "questionId": 19,
+      "text": "Ag"
+    },
+    {
+      "id": "43",
+      "questionId": 19,
+      "text": "Fe"
+    },
+    {
+      "id": "44",
+      "questionId": 19,
+      "text": "Cu"
+    },
+    {
+      "id": "45",
+      "questionId": 21,
+      "text": "James Cameron"
+    },
+    {
+      "id": "46",
+      "questionId": 21,
+      "text": "Steven Spielberg"
+    },
+    {
+      "id": "47",
+      "questionId": 21,
+      "text": "Peter Jackson"
+    },
+    {
+      "id": "48",
+      "questionId": 21,
+      "text": "Christopher Nolan"
+    },
+    {
+      "id": "49",
+      "questionId": 23,
+      "text": "2001"
+    },
+    {
+      "id": "50",
+      "questionId": 23,
+      "text": "2002"
+    },
+    {
+      "id": "51",
+      "questionId": 23,
+      "text": "2003"
+    },
+    {
+      "id": "52",
+      "questionId": 23,
+      "text": "2004"
+    }
+  ],
+  "answers": [
+    {
+      "username": "juan",
+      "questionId": "4",
+      "answer": "Lionel Messi",
+      "id": "98fa"
+    },
+    {
+      "id": "9ba3",
+      "username": "juan",
+      "questionId": "1",
+      "answer": "Francia"
+    },
+    {
+      "username": "",
+      "questionId": "3",
+      "answer": "brasil",
+      "id": "7055"
+    },
+    {
+      "username": "juan",
+      "questionId": "3",
+      "answer": "peru",
+      "id": "753c"
+    },
+    {
+      "username": "alejo",
+      "questionId": "22",
+      "answer": "",
+      "id": "b662"
+    },
+    {
+      "id": "b91c",
+      "username": "alejo",
+      "questionId": "23",
+      "answer": "2001"
+    },
+    {
+      "username": "alejo",
+      "questionId": "21",
+      "answer": "Steven Spielberg",
+      "id": "e6a7"
+    },
+    {
+      "username": "juan",
+      "questionId": "21",
+      "answer": "James Cameron",
+      "id": "c066"
+    },
+    {
+      "id": "7c3a",
+      "username": "mapache",
+      "questionId": "1",
+      "answer": "Francia"
+    },
+    {
+      "id": "a720",
+      "username": "mapache",
+      "questionId": "5",
+      "answer": "no"
+    },
+    {
+      "id": "cb9b",
+      "username": "mapache",
+      "questionId": "12",
+      "answer": "George Washington"
+    },
+    {
+      "username": "mapache",
+      "questionId": "17",
+      "answer": "A veces",
+      "id": "9c24"
+    },
+    {
+      "id": "45eb",
+      "username": "mapache",
+      "questionId": "16",
+      "answer": "Júpiter"
+    },
+    {
+      "id": "f170",
+      "username": "mapache",
+      "questionId": "18",
+      "answer": "albert einstein"
+    },
+    {
+      "id": "86e5",
+      "username": "mapache",
+      "questionId": "19",
+      "answer": "Au"
+    },
+    {
+      "id": "15b2",
+      "username": "mapache",
+      "questionId": "20",
+      "answer": "si"
+    }
   ]
 }

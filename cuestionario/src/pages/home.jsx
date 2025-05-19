@@ -1,12 +1,44 @@
-import React from "react"
+import React from "react";
+import { useContext } from "react";
+import { useState, useEffect } from "react";
+import {Link} from "react-router-dom";
+import '../components/home.css';
 
 const Home = () => {
-return(
-<div>
-    <h1>Home</h1>
-    <input placeholder = "ingrece su usuario"></input>
-    {/* <button onClick={link='./home'}>Ingresar</button> */}
-</div>
-)
-}
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:3000/categories')
+      .then(response => response.json())
+      .then(data => setCategories(data))
+      .catch(error => {
+        console.error('Error al obtener los datos:', error);
+        setCategories([]);
+      });
+  }, []);
+
+  return (
+    <div>
+      <div className="login-wrapper">
+        <div className="login-container">
+            <h1>Home</h1>
+                <ul>
+                    {categories.map((category, index) => (
+                    <li key={index}>
+                        <Link to={`/QuestionPanel/${category.id}`}>
+                            <button>{category.name}</button>
+                        </Link>
+                    </li>
+                    ))}
+                </ul>
+                <Link to={"/"}>
+                    <button className="exit-button">Exit</button>
+                </Link>
+            </div>
+        </div>
+    </div>
+
+  );
+};
+
 export default Home;

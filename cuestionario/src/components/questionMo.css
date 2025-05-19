@@ -1,0 +1,29 @@
+.exit-button {
+  font-size: 1.2rem;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Back-button {
+  font-size: 1.1rem;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.option-button {
+  font-size: 1.1rem;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
