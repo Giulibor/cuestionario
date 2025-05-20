@@ -205,9 +205,15 @@
       "type": "text"
     },
     {
-      "id": 28,
+      "id": "28",
       "categoryId": "7",
       "text": "lalalalo",
+      "type": "multiple"
+    },
+    {
+      "id": 29,
+      "categoryId": "7",
+      "text": "lss",
       "type": "multiple"
     }
   ],
@@ -471,6 +477,26 @@
       "id": "52",
       "questionId": 23,
       "text": "2004"
+    },
+    {
+      "id": 53,
+      "questionId": 29,
+      "text": "option"
+    },
+    {
+      "id": 54,
+      "questionId": 29,
+      "text": "funcionan"
+    },
+    {
+      "id": 55,
+      "questionId": 29,
+      "text": "carajo"
+    },
+    {
+      "id": 56,
+      "questionId": 29,
+      "text": "viva el bolso"
     }
   ],
   "answers": [

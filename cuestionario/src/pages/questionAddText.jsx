@@ -38,13 +38,7 @@ const QuestionAddText = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.length > 0) {
-                    fetch(`http://localhost:3000/questions?text?=${questions}`, {
-                        method: 'PUT',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({
-                            type: "multiple",
-                        })
-                    })
+                    return;
                 } else {
                     fetch('http://localhost:3000/questions', {
                         method: 'POST',
@@ -58,6 +52,7 @@ const QuestionAddText = () => {
                     })
                 }
             });
+        setQuestions("");
     };
     return (
         <div>
@@ -71,7 +66,8 @@ const QuestionAddText = () => {
                     />
                     <br></br>
                     <button className="Create-button" onClick={() => handleText()}>Create</button>
-                    <Link to={"/home"}>
+                    <br></br>
+                    <Link to={`/QuestionPanel/${id}`}>
                         <button className="Back-button">Back</button>
                     </Link>
                     <br></br>

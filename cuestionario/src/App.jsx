@@ -7,8 +7,8 @@ import QuestionPanel from './pages/questionsPanel';
 import QuestionMO from './pages/questionMo';
 import QuestionText from './pages/questionText';
 import QuestionAddText from './pages/questionAddText';
+import QuestionAddMO from './pages/questionAddMo';
 import CategoryAdd from './pages/categoryAdd';          
-
 
 
 function App() {  
@@ -24,7 +24,7 @@ function App() {
         <Route path="/QuestionPanel/:id" element={<QuestionPanel/>} />
         <Route path="/QuestionText/:categoryId/:id" element={<QuestionText/>} />
         <Route path="/CategoryAdd/" element={<CategoryAdd/>} />
-
+        <Route path="/QuestionAddMO/:id" element={<QuestionAddMO/>} />
       </Routes>
     </div>
   );

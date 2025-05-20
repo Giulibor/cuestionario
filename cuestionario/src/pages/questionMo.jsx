@@ -1,5 +1,5 @@
 import React from "react"
-import { useContext} from "react";
+import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -35,7 +35,7 @@ const QuestionMO = () => {
             });
     }, [id]);
 
-     useEffect(() => {
+    useEffect(() => {
         fetch(`http://localhost:3000/answers?questionId=${id}&username=${userName}`)
             .then(res => res.json())
             .then(data => {
@@ -48,34 +48,34 @@ const QuestionMO = () => {
     }, [id, userName, options]);
 
     const handleOptionClick = (option) => {
-    setSelected(option.id);
+        setSelected(option.id);
 
-    fetch(`http://localhost:3000/answers?questionId=${id}&username=${userName}`)
-        .then(res => res.json())
-        .then(data => {
-            if (data.length > 0) {
-                fetch(`http://localhost:3000/answers/${data[0].id}`, {
-                    method: 'PUT',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        username: userName,
-                        questionId: id,
-                        answer: option.text
-                    })
-                });
-            } else {
-                fetch('http://localhost:3000/answers', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        username: userName,
-                        questionId: id,
-                        answer: option.text
-                    })
-                });
-            }
-        });
-};
+        fetch(`http://localhost:3000/answers?questionId=${id}&username=${userName}`)
+            .then(res => res.json())
+            .then(data => {
+                if (data.length > 0) {
+                    fetch(`http://localhost:3000/answers/${data[0].id}`, {
+                        method: 'PUT',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            username: userName,
+                            questionId: id,
+                            answer: option.text
+                        })
+                    });
+                } else {
+                    fetch('http://localhost:3000/answers', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            username: userName,
+                            questionId: id,
+                            answer: option.text
+                        })
+                    });
+                }
+            });
+    };
 
     return (
         <div>
