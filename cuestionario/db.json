@@ -31,14 +31,6 @@
     {
       "id": "5",
       "name": "Movies"
-    },
-    {
-      "id": "6",
-      "name": "mapache"
-    },
-    {
-      "id": "7",
-      "name": "lalala"
     }
   ],
   "questions": [
@@ -191,30 +183,6 @@
       "categoryId": 5,
       "text": "¿'Avatar' es una película de animación?",
       "type": "text"
-    },
-    {
-      "id": "26",
-      "categoryId": "6",
-      "text": "edad",
-      "type": "text"
-    },
-    {
-      "id": "27",
-      "categoryId": "6",
-      "text": "es feo",
-      "type": "text"
-    },
-    {
-      "id": "28",
-      "categoryId": "7",
-      "text": "lalalalo",
-      "type": "multiple"
-    },
-    {
-      "id": 29,
-      "categoryId": "7",
-      "text": "lss",
-      "type": "multiple"
     }
   ],
   "options": [
@@ -477,26 +445,6 @@
       "id": "52",
       "questionId": 23,
       "text": "2004"
-    },
-    {
-      "id": 53,
-      "questionId": 29,
-      "text": "option"
-    },
-    {
-      "id": 54,
-      "questionId": 29,
-      "text": "funcionan"
-    },
-    {
-      "id": 55,
-      "questionId": 29,
-      "text": "carajo"
-    },
-    {
-      "id": 56,
-      "questionId": 29,
-      "text": "viva el bolso"
     }
   ],
   "answers": [
