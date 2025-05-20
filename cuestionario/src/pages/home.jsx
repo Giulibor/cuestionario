@@ -31,6 +31,9 @@ const Home = () => {
                     </li>
                     ))}
                 </ul>
+                <Link to={"/CategoryAdd/"}>
+                    <button className="Add a Category">Add a Category</button>
+                </Link>
                 <Link to={"/"}>
                     <button className="exit-button">Exit</button>
                 </Link>

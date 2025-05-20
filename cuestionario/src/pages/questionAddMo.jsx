@@ -1,0 +1,120 @@
+/*import React from "react"
+import { useContext } from "react";
+import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import '../components/questionMO.css'
+import { UserContext } from "../../context/UserContext";
+
+const QuestionAddMO = () => {
+    const { userName } = useContext(UserContext);
+    const { id } = useParams();
+    const { categoryId } = useParams();
+    const [questions, setQuestions] = useState("");
+    const [options, setOptions] = useState([]);
+    const [count, setCount] = useState(0);
+    const [option1, setOption1] = useState("");
+    const [option2, setOption2] = useState("");
+    const [option3, setOption3] = useState("");
+    const [option4, setOption4] = useState("");
+
+    useEffect(() => {
+        fetch(`http://localhost:3000/questions`)
+            .then(res => res.json())
+            .then(data => {
+                setCount(data.length);
+            });
+    }, []);
+
+    const handleText = () => {
+
+        fetch(`http://localhost:3000/questions?text=${questions}`)
+            .then(res => res.json())
+            .then(data => {
+                if (data.length > 0) {
+                    fetch(`http://localhost:3000/questions?text?=${questions}`, {
+                        method: 'PUT',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            type: "multiple",
+                        })
+                    })
+                } else {
+                    fetch('http://localhost:3000/questions', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            id: count + 1,
+                            categoryId: id,
+                            text: questions,
+                            type: "multiple",
+                        })
+                    })
+                }
+            });
+
+            fetch(`http://localhost:3000/questions?text=${questions}`)
+            .then(res => res.json())
+            .then(data => {
+                if (data.length > 0) {
+                    fetch(`http://localhost:3000/questions?text?=${questions}`, {
+                        method: 'PUT',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            type: "multiple",
+                        })
+                    })
+                } else {
+                    fetch('http://localhost:3000/questions', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            id: count + 1,
+                            categoryId: id,
+                            text: questions,
+                            type: "multiple",
+                        })
+                    })
+                }
+            });
+    };
+    return (
+        <div>
+            <div className="login-wrapper">
+                <div className="login-container">
+                    <h1>Add your Question</h1>
+                    <input
+                        placeholder="Ingrese la pregunta"
+                        value={questions}
+                        onChange={e => setQuestions(e.target.value)}
+                    />
+                    <input
+                        placeholder="Ingrese la pregunta"
+                        value={questions}
+                        onChange={e => setQuestions(e.target.value)}
+                    />
+                    <input
+                        placeholder="Ingrese la pregunta"
+                        value={questions}
+                        onChange={e => setQuestions(e.target.value)}
+                    />
+                    <input
+                        placeholder="Ingrese la pregunta"
+                        value={questions}
+                        onChange={e => setQuestions(e.target.value)}
+                    />
+                    <br></br>
+                    <button className="Create-button" onClick={() => handleText()}>Create</button>
+                    <Link to={"/home"}>
+                        <button className="Back-button">Back</button>
+                    </Link>
+                    <br></br>
+                    <Link to={"/"}>
+                        <button className="exit-button">Exit</button>
+                    </Link>
+                </div>
+            </div>
+        </div>
+    )
+}
+export default QuestionAddMO;*/
